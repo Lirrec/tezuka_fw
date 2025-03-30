@@ -24,6 +24,7 @@ $dfu_suffix -a $BIN_DIR/boot.bin.tmp -v $DEVICE_VID -p $DEVICE_PID
 mv $BIN_DIR/boot.bin.tmp $BIN_DIR/boot.dfu
 
 echo "generating uboot-env.dfu"
+echo "Using uboot-env: '$BOARD_DIR/uboot-env.txt'"
 mkenvimage -s 0x20000 -o $BIN_DIR/uboot-env.bin $BOARD_DIR/uboot-env.txt
 cp $BIN_DIR/uboot-env.bin $BIN_DIR/uboot-env.bin.tmp
 $dfu_suffix -a $BIN_DIR/uboot-env.bin.tmp -v $DEVICE_VID -p $DEVICE_PID

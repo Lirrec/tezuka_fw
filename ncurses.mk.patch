@@ -1,0 +1,48 @@
+diff --git a/buildroot/package/ncurses/ncurses.mk b/buildroot/package/ncurses/ncurses.mk
+index 5d9c6bb0..345dc998 100644
+--- a/buildroot/package/ncurses/ncurses.mk
++++ b/buildroot/package/ncurses/ncurses.mk
+@@ -95,24 +95,24 @@ NCURSES_CONF_OPTS += --without-gpm
+ endif
+ 
+ NCURSES_TERMINFO_FILES = \
+-	a/ansi \
+-	d/dumb \
+-	l/linux \
+-	p/putty \
+-	p/putty-256color \
+-	p/putty-vt100 \
+-	s/screen \
+-	s/screen-256color \
+-	v/vt100 \
+-	v/vt100-putty \
+-	v/vt102 \
+-	v/vt200 \
+-	v/vt220 \
+-	x/xterm \
+-	x/xterm+256color \
+-	x/xterm-256color \
+-	x/xterm-color \
+-	x/xterm-xfree86 \
++	61/ansi \
++	64/dumb \
++	6c/linux \
++	70/putty \
++	70/putty-256color \
++	70/putty-vt100 \
++	73/screen \
++	73/screen-256color \
++	76/vt100 \
++	76/vt100-putty \
++	76/vt102 \
++	76/vt200 \
++	76/vt220 \
++	78/xterm \
++	78/xterm+256color \
++	78/xterm-256color \
++	78/xterm-color \
++	78/xterm-xfree86 \
+ 	$(call qstrip,$(BR2_PACKAGE_NCURSES_ADDITIONAL_TERMINFO))
+ 
+ ifeq ($(BR2_PACKAGE_NCURSES_WCHAR),y)
+
